@@ -11,6 +11,11 @@
     scroll-behavior: smooth
 }
 
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 /* ######################### */
 /* Navigation */
 /* ######################### */
@@ -79,6 +84,12 @@ nav .navigation a:hover::before , nav .navigation a:hover::after,  nav .navigati
     cursor: pointer;
     z-index: 10001;
     display: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
 }
 
 #burger-menu:hover {
@@ -135,6 +146,28 @@ footer img {
     border-radius: 50px;
 }
 
+/* WhatsApp Widget Responsive */
+.fixed.bottom-6.right-6 {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 50;
+}
+
+.fixed.bottom-6.right-6 a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: #25d366;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,.2);
+    transition: all 0.3s ease;
+}
+
 .copy {
     padding: 2rem 0;
     text-align: center;
@@ -156,7 +189,7 @@ footer img {
         padding: 1rem;
     }
     #burger-menu {
-        display: block;
+        display: flex !important;
     }
     .navigation {
         position: absolute;
@@ -165,14 +198,34 @@ footer img {
         flex-direction: column;
         row-gap: 2rem;
         width: 280px;
+        max-width: 100vw;
         min-height: 100vh;
         background: #fff;
         box-shadow: 5px 0 5px 0 rgba(0,0,0,.2);
         padding: 1rem 0;
         transition: .2s ease-in-out;
+        overflow-y: auto;
     }
     .navigation.active {
         right: 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+    nav {
+        padding: 0.75rem;
+    }
+    
+    nav .logo img {
+        width: 50px;
+    }
+    
+    #burger-menu {
+        font-size: 1.4rem;
+    }
+    
+    .navigation {
+        width: 80vw;
     }
 }
 
@@ -180,8 +233,129 @@ footer img {
     
     .copy {
         padding: 1rem;
+        font-size: 11px;
     }
     
+    nav {
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+    
+    nav .logo img {
+        width: 45px;
+    }
+    
+    nav .navigation a {
+        font-size: 0.95rem;
+        padding: 8px 15px;
+    }
+    
+    #burger-menu {
+        font-size: 1.3rem;
+        width: 35px;
+        height: 35px;
+    }
+    
+    .navigation {
+        width: 100vw;
+        gap: 1rem;
+    }
+    
+    footer {
+        padding: 30px 15px;
+        gap: 1rem;
+    }
+    
+    footer h2 {
+        font-size: 1.1rem;
+    }
+    
+    footer img {
+        width: 40px;
+    }
+    
+    .footer-box .payement {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    
+    .footer-box .payement img {
+        max-width: 50px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px){
+    
+    .copy {
+        padding: 0.75rem;
+        font-size: 10px;
+    }
+    
+    nav {
+        padding: 0.4rem;
+    }
+    
+    nav .logo img {
+        width: 40px;
+    }
+    
+    #burger-menu {
+        font-size: 1.2rem;
+        width: 32px;
+        height: 32px;
+    }
+    
+    .navigation {
+        width: 100vw;
+        gap: 0.75rem;
+    }
+    
+    nav .navigation a {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+    
+    footer {
+        padding: 20px 10px;
+        gap: 0.75rem;
+    }
+    
+    footer h2, footer h3 {
+        font-size: 1rem;
+    }
+    
+    footer a {
+        font-size: 0.9rem;
+    }
+    
+    .footer-box {
+        padding: 0 5px;
+    }
+    
+    .footer-box .payement {
+        gap: 0.5rem;
+    }
+    
+    .footer-box .payement img {
+        max-width: 40px;
+    }
+    
+    /* WhatsApp widget small screen */
+    .fixed.bottom-6.right-6 {
+        bottom: 1rem;
+        right: 1rem;
+    }
+    
+    .fixed.bottom-6.right-6 a {
+        width: 55px;
+        height: 55px;
+    }
+    
+    .fixed.bottom-6.right-6 a i {
+        width: 28px !important;
+        height: 28px !important;
+    }
 }
 
  
