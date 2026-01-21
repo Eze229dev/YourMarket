@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Your Market | Physical & Digital Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#F97316',
+                        secondary: '#2563EB',
+                        dark: '#0F172A',
+                        light: '#F8FAFC'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation Component -->
+     <nav >
+        <a href="#" class="logo"><img src="./images/logo.jpeg" alt=""></a>
+        <ul class="navigation">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#produits">Produits</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">A propos</a></li>
+            <li><a href="#reviews">Les avis</a></li>
+        </ul>
+      
+        <div class="bx bx-menu" id="burger-menu"></div>
+    </nav>
+
+    s
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-dark text-white py-20 md:py-32">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Le carrefour de vos envies et de votre croissance digitale</h1>
+                <p class="text-xl mb-8">Your Market réunit le meilleur du shopping physique et l'expertise des services numériques. Produits, Formations, Marketing : tout est là.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#produits" class="bg-primary hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 flex items-center">
+                        <i data-feather="shopping-bag" class="mr-2"></i> Explorer la Boutique
+                    </a>
+                    <a href="#services" class="border-2 border-secondary text-secondary hover:bg-blue-50 font-bold py-3 px-6 rounded-lg transition duration-300 flex items-center">
+                        <i data-feather="code" class="mr-2"></i> Nos Services Digitaux
+                    </a>
+                </div>
+                <a href="https://uutlovzi.mychariow.shop" target="_blank" class="inline-block bg-primary py-3 px-6 font-bold  mt-6 text-white rounded-lg hover:bg-orange-600 transition duration-">Découvrir les formations</a>
+            </div>
+            <div class="md:w-1/2">
+                <img src="images/ba.jpeg" alt="Digital and Physical Products" class="rounded-xl shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="produits" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Une sélection premium pour votre style de vie</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Product Card 1 -->
+                <div class="group overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="overflow-hidden h-64">
+                        <img src="images/vet.jpg" alt="Fashion" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">La Mode</h3>
+                        <p class="text-gray-600 mb-4">Élégance et confort au quotidien.</p>
+                        <a href="#" class="text-primary font-semibold hover:text-orange-600 flex items-center transition">
+                            Voir les Vêtements <i data-feather="arrow-right" class="ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="group overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="overflow-hidden h-64">
+                        <img src="images/ordi.jpg" alt="Tech" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">La Tech</h3>
+                        <p class="text-gray-600 mb-4">Matériel performant pour pros et créatifs.</p>
+                        <a href="#" class="text-primary font-semibold hover:text-orange-600 flex items-center transition">
+                            Voir le matériel IT <i data-feather="arrow-right" class="ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="group overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="overflow-hidden h-64">
+                        <img src="images/choes.jpeg" alt="Accessories" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Les Accessoires</h3>
+                        <p class="text-gray-600 mb-4">Les détails qui font la différence.</p>
+                        <a href="#" class="text-primary font-semibold hover:text-orange-600 flex items-center transition">
+                            Voir les Chaussures <i data-feather="arrow-right" class="ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Propulsez votre présence en ligne</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-lg transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i data-feather="globe" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Développement Web</h3>
+                    <p class="text-gray-600 mb-6">Des plateformes rapides, sécurisées et design pour votre business.</p>
+                    <a href="http://wa.me/22959042418" target="_blank" class="bg-primary hover:bg-orange-600 text-white font-bold py-2 px-6 rounded-lg transition duration-300 inline-block">
+                        Commander ce service
+                    </a>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-lg transition duration-300">
+                    <div class="text-blue-800 mb-4">
+                        <i data-feather="bar-chart-2" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Data Analytics</h3>
+                    <p class="text-gray-600 mb-6">Transformez vos chiffres en décisions stratégiques claires.</p>
+                    <a href="http://wa.me/22959042418" target="_blank" class="bg-primary hover:bg-orange-600 text-white font-bold py-2 px-6 rounded-lg transition duration-300 inline-block">
+                        Analyser mes données
+                    </a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-lg transition duration-300">
+                    <div class="text-orange-500 mb-4">
+                        <i data-feather="settings" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Solutions Sur-mesure</h3>
+                    <p class="text-gray-600 mb-6">L'automatisation au service de votre productivité.</p>
+                    <a href="http://wa.me/22959042418" target="_blank" class="bg-primary hover:bg-orange-600 text-white font-bold py-2 px-6 rounded-lg transition duration-300 inline-block">
+                        En savoir plus
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ebooks Section -->
+    <section class="py-20 bg-dark text-white">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <img src="http://static.photos/education/640x360/4" alt="Ebooks" class="rounded-xl shadow-2xl">
+            </div>
+            <div class="md:w-1/2 md:pl-12">
+                <h2 class="text-3xl font-bold mb-6">Apprenez les compétences de demain</h2>
+                <p class="text-xl mb-6">Accédez à notre bibliothèque exclusive d'eBooks. Marketing, Dev, Business : formez-vous à votre rythme avec des méthodes approuvées.</p>
+                <div class="flex items-center mb-8">
+                    <div class="flex text-yellow-400 mr-2">
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                    </div>
+                    <span>Déjà 500+ lecteurs satisfaits</span>
+                </div>
+                <a href="https://uutlovzi.mychariow.shop" target="_blank" class="bg-primary hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg transition duration-300 inline-flex items-center">
+                    <i data-feather="book" class="mr-2"></i> Télécharger les eBooks
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marketing Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-12">Ne cherchez plus vos clients, attirez-les</h2>
+            
+            <div class="max-w-2xl mx-auto mb-12 text-left">
+                <div class="flex items-start mb-4">
+                    <div class="text-green-500 mr-4 mt-1">
+                        <i data-feather="check-circle" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg">E-Commerce Growth</h3>
+                        <p class="text-gray-600">Optimisation de vos fiches produits et tunnel de vente.</p>
+                    </div>
+                </div>
+                <div class="flex items-start mb-4">
+                    <div class="text-green-500 mr-4 mt-1">
+                        <i data-feather="check-circle" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg">Meta Ads (Facebook/Insta)</h3>
+                        <p class="text-gray-600">Publicités ciblées pour un ROI maximal.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="text-green-500 mr-4 mt-1">
+                        <i data-feather="check-circle" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg">Stratégie 360°</h3>
+                        <p class="text-gray-600">Plan d'action complet pour dominer votre marché.</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="http://wa.me/22959042418" target="_blank" class="bg-secondary hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 inline-flex items-center">
+                <i data-feather="rocket" class="mr-2"></i> Lancer ma campagne publicitaire
+            </a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="reviews" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Ils nous font confiance</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex  items-center mb-4">
+                        <div class="text-yellow-400 flex mr-2">
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Grâce à Your Market, notre boutique en ligne a vu son chiffre d'affaires augmenter de 150% en 3 mois. Leur expertise en marketing digital est exceptionnelle."</p>
+                    <div class="flex items-center">
+                        <img src="http://static.photos/people/100x100/1" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Marthe KODJO</h4>
+                            <p class="text-gray-500 text-sm">CEO, Fashion Boutique</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class=" flex text-yellow-400 mr-2">
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Les formations Your Market m'ont permis de développer des compétences en développement web qui ont transformé ma carrière. Le contenu est clair et pratique."</p>
+                    <div class="flex items-center">
+                        <img src="http://static.photos/people/100x100/2" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Thomas DOSSA</h4>
+                            <p class="text-gray-500 text-sm">Développeur Web</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class=" flex text-yellow-400 mr-2">
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"La qualité des produits physiques est au rendez-vous. J'ai acheté plusieurs articles et je suis toujours satisfait. Le service client est également très réactif."</p>
+                    <div class="flex items-center">
+                        <img src="http://static.photos/people/100x100/3" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Sophie Leroy</h4>
+                            <p class="text-gray-500 text-sm">Fashion Blogger</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Pourquoi Your Market ?</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Reason 1 -->
+                <div class="text-center p-6">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="refresh-cw" class="text-blue-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Tout-en-un</h3>
+                    <p class="text-gray-600">Pourquoi multiplier les prestataires ? Produits et Services sous le même toit.</p>
+                </div>
+
+                <!-- Reason 2 -->
+                <div class="text-center p-6">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="award" class="text-blue-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Qualité Certifiée</h3>
+                    <p class="text-gray-600">Des produits testés et des experts digitaux seniors à votre service.</p>
+                </div>
+
+                <!-- Reason 3 -->
+                <div class="text-center p-6">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="message-square" class="text-blue-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Support Réactif</h3>
+                    <p class="text-gray-600">Une équipe disponible pour la livraison à moindre cout.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4">Prêt à passer au niveau supérieur ?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Que ce soit pour un style impeccable ou un business florissant, commencez maintenant.</p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="http://wa.me/22959042418" target="_blank" class="bg-white text-primary hover:bg-gray-100 font-bold py-3 px-8 rounded-lg transition duration-300">
+                    Commander maintenant
+                </a>
+                <a href="http://wa.me/22959042418" target="_blank" class="border-2 border-white text-white hover:bg-white hover:text-primary font-bold py-3 px-8 rounded-lg transition duration-300 flex items-center justify-center">
+                    <i data-feather="message-circle" class="mr-2"></i> Discussion WhatsApp Directe
+                </a>
+            </div>
+            <a href="http://wa.me/22959042418" target="_blank" class="inline-block mt-6 text-white underline hover:text-gray-200 transition">Demander un devis personnalisé</a>
+        </div>
+    </section>
+
+    <!-- Footer Component -->
+    <custom-footer></custom-footer>
+
+    <!-- WhatsApp Widget -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="http://wa.me/22959042418" target="_blank" class="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg flex items-center justify-center transition duration-300">
+            <i data-feather="message-circle" class="w-6 h-6"></i>
+        </a>
+    </div>
+
+
+    <footer>
+
+
+        <div class="footer-box">
+            <img src="./images/logo.jpeg" alt="">
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=61565523477052"><i class='bx bxl-facebook' ></i></a>
+                <a href=""><i class='bx bxl-instagram' ></i></a>
+                <a href="https://www.tiktok.com/@yourmarket18?_r=1&_t=ZS-93G1eUcZWdO"><i class='bx bxl-tiktok' ></i></a>
+                <a href=""><i class='bx bxl-youtube' ></i></a>
+            </div>
+        </div>
+
+        <div class="footer-box">
+            <h2>Informations</h2>
+            <li>
+                <a href="#">Conditions de vente</a>
+            </li>
+            <li>
+                <a href="#">Mentions légales</a>
+            </li>
+            <li>
+                <a href="#">Support</a>
+            </li>
+            <li>
+                <a href="#">Nous contacter</a>
+            </li>
+        </div>
+
+
+        <div class="footer-box">
+            <h2>Nos locaux</h2>
+            <li>
+                <a href="#">Présent en Afrique</a>
+            </li>
+            
+          
+        </div>
+
+        <div class="footer-box">
+            <h3>Payements</h3>
+            <div class="payement">
+                
+                <img src="./images/pay-03.png" alt="">
+                <img src="./images/mtn.jpg" alt="">
+                <img src="./images/pay-02.png" alt="">
+                <img src="./images/pay-01.png" alt="">
+                <img src="./images/visa.jpg" alt="">
+                
+                <img src="./images/moov.jpg" alt="">
+            </div>
+        </div>
+
+    </footer>
+
+
+    <div class="copy">
+        <p>&copy; Your Market-Tous droits reservés-2026</p>
+    </div>
+
+    
+
+    <!-- Scripts -->
+    <script src="components/nav.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="app.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
